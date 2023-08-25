@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimal Selection Monotonicity Theorem</title>
+</head>
+<body>
+  <p>Theorem: Optimal Selection Monotonicity Theorem</p>
+  <p>Statement: Consider a problem that can be solved using dynamic programming where you need to make a sequence of selections or choices, and there is a certain property (e.g., value, cost, etc.) associated with each choice. If, for a given instance of the problem, increasing the value of a choice can never lead to a worse solution (i.e., it can only improve or keep the solution the same), then among the optimal solutions, the choice with the highest value will always be selected.</p>
+  <p>Explanation: The Optimal Selection Monotonicity Theorem provides valuable insight when solving dynamic programming problems involving sequential decisions. When the property associated with each choice obeys monotonicity, meaning that better choices never lead to worse solutions, the theorem guarantees that the highest-value choice among those available will be part of the optimal solution. This theorem is particularly useful for optimization problems where you aim to maximize some value.</p>
+  <p>Example: Consider a problem where you are given a sequence of tasks with associated rewards and penalties. You can only complete tasks in order, and once a task is completed, you move to the next. Completing a task earlier may lead to higher rewards but also higher penalties. However, the penalties never outweigh the rewards. In this scenario, the Optimal Selection Monotonicity Theorem applies. Choosing tasks with higher rewards will never lead to a worse overall outcome, even if it incurs higher penalties. Thus, among the optimal sequences of tasks, the task with the highest reward will always be selected.</p>
+  <p>This theorem simplifies decision-making in dynamic programming by highlighting that, given the property's monotonicity, the optimal choice strategy prioritizes the choices with the highest value.</p>
+  <p><a href="https://leetcode.com/problems/coin-change/submissions/1030973181/">Coin Change</a></p>
+  <p>Here is a sample submission which uses dynamic programming to find the minimum number of coins needed to make a given amount, considering different coin denominations, ensuring optimal choices using the Optimal Selection Monotonicity Theorem. Although it is not the fastest, it demonstrates how you could use this theorem.</p>
+</body>
+</html>
